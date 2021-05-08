@@ -1,0 +1,20 @@
+<div class="mt-5 container">
+  <p>Go to <a routerLink='/form'>Form</a></p>
+  <br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">From</th>
+        <th scope="col">To</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let i of info'>
+        <th scope="row">{{i.id}}</th>
+        <td>{{i.from}}</td>
+        <td>{{i.to}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
